@@ -16,3 +16,6 @@ data.json
 
 #logging
 /finetunelog
+
+#db
+/chroma_db
