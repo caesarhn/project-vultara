@@ -10,14 +10,14 @@ chroma_client = chromadb.PersistentClient(path="chroma_db")
 collection = chroma_client.get_or_create_collection(name="kerentanan")
 print("metadata : ", collection.metadata)
 
-query = "kerentanan pada PHPGurukul IFSC Code Finder Project 1.0. dengan version none, attack via network, attack complexity low"
+query = "carikan document vulnerability pada PHP dengan serangan via network dan critical"
 
 start = time.time()
 # proses
 search_embeddings = model.encode(query, convert_to_tensor=True, device='cuda').tolist()
 resquery = collection.query(
     query_embeddings=search_embeddings,
-    n_results=3
+    n_results=2
 )
 
 end = time.time()

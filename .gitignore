@@ -4,6 +4,7 @@
 test.csv
 test.py
 test_load_csv.py
+finetune-mini.py
 
 #large data training
 data_finetune_retrieval.csv
