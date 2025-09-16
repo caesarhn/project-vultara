@@ -1,0 +1,1 @@
+execute module cu "nvcc -Xcompiler "/LD" -o tfidf.dll tfidf.cu"
