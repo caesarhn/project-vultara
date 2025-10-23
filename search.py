@@ -10,7 +10,7 @@ chroma_client = chromadb.PersistentClient(path="chroma_db")
 collection = chroma_client.get_or_create_collection(name="kerentanan")
 print("metadata : ", collection.metadata)
 
-query = "carikan document vulnerability pada PHP dengan serangan via network dan critical"
+query = "apa itu network"
 
 start = time.time()
 # proses

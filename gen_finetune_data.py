@@ -68,12 +68,12 @@ for item in tqdm(data["CVE_Items"], desc="Generating to Sentences"):
     data_csv.append([cve_id, f"{vulnerable_on_id} {attribute_id}", doc])
 
     #add another variant
-    data_csv.append([cve_id, f"{", ".join([str(item).lower() for item in attribute])} {", ".join([str(item) for item in vulnerable_on])}", doc])
-    data_csv.append([cve_id, f"{", ".join([str(item) for item in vulnerable_on])} {", ".join([str(item).lower() for item in attribute])}", doc])
+    data_csv.append([cve_id, f"{', '.join([str(item).lower() for item in attribute])} {', '.join([str(item) for item in vulnerable_on])}", doc])
+    data_csv.append([cve_id, f"{', '.join([str(item) for item in vulnerable_on])} {', '.join([str(item).lower() for item in attribute])}", doc])
     random.shuffle(vulnerable_on)
     random.shuffle(attribute)
-    data_csv.append([cve_id, f"{", ".join([str(item).lower() for item in attribute])} {", ".join([str(item) for item in vulnerable_on])}", doc])
-    data_csv.append([cve_id, f"{", ".join([str(item) for item in vulnerable_on])} {", ".join([str(item).lower() for item in attribute])}", doc])
+    data_csv.append([cve_id, f"{', '.join([str(item).lower() for item in attribute])} {', '.join([str(item) for item in vulnerable_on])}", doc])
+    data_csv.append([cve_id, f"{', '.join([str(item) for item in vulnerable_on])} {', '.join([str(item).lower() for item in attribute])}", doc])
 
 for i in range(10):
     print("data: ", data_csv[i])

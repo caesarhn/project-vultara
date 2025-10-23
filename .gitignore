@@ -9,6 +9,7 @@ finetune-mini.py
 #large data training
 data_finetune_retrieval.csv
 data_finetune_v1.csv
+data_bm25.csv
 
 #large data
 nvdcve-1.1-2024.json
